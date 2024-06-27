@@ -26,6 +26,26 @@ This introductory TryHackMe room focuses on running basic commands on a Linux te
 </p>
 <br />
 <br />
+- <b>Interacting with the Filesystem</b>
+<p>In this next section 4 new commands are introduced: ls, cd, cat, and pwd. </p>
+<br>
+<p align="center">To begin the section exercises I used ls to list the contents of the current directory (user tryhackme). Doing this I discovered that there are 4 folders.<br/>
+  <img src="https://github.com/Finley-Klee/Linux-Fundamentals-Part-1/assets/171582741/bce54151-5854-4b17-b61f-8f3ba04b418a" height="80%" width="80%" alt="A black background with white and blue text. The first line in white reads tryhackme@Linux1:~$ ls. The next line has five items: access.log is written first in white followed by folder 1, folder 2, folder 3, and folder 4 all written in blue."/>
+  <br />
+  <br />
+  The next question asks which folder has a text file in it, so I used the chnage directory (cd) command to navigate to each folder and the listing (ls) command to check for contents. In doing this I discovered a note.txt in folder 4.<br />
+  <img src="https://github.com/Finley-Klee/Linux-Fundamentals-Part-1/assets/171582741/04506ad8-7d98-47a3-adba-4d825ef66e19" height="80%" width="80%" alt="A black background with white text. The first line ends with cd folder 1 after the username, then the next line ends with ls, the third line ends with cd ../folder 2 and the lines alternate like this until the ls in folder 4 results in a line which reads note.txt."/>
+  <br />
+  <br />
+  I printed the contents of this file using the concatenate command (cat) and found that it read "Hello World!" <br />
+  <img src="https://github.com/Finley-Klee/Linux-Fundamentals-Part-1/assets/171582741/51048565-6909-4853-9590-541c390f7e8c" height="80%" width="80%" alt="A black background with white text. The first line reads tryhackme@Linux1:~/folder4$ cat note.txt. The second line reads Hello World! and the last line reads tryhackme@Linux1:~/folder4$"/>
+   <br />
+  <br />
+ Lastly, I used the print working directory (pwd) command to discover that the file's location is /home/tryhackme/folder4<br />
+  <img src="https://github.com/Finley-Klee/Linux-Fundamentals-Part-1/assets/171582741/db301479-83e8-4362-ab55-e27c145c3fb3" height="80%" width="80%" alt="A black backgorund with white text. The first line reads tryhackme@Linux1:~/folder4$ pwd. The next line reads /home/tryhackme/folder4. The last line reads tryhackme@Linux1:~/folder4$"/>
+</p>
+<br />
+<br />
 - <b>Section Name</b>
 <p>Description</p>
 <br>
@@ -48,4 +68,3 @@ This introductory TryHackMe room focuses on running basic commands on a Linux te
   Step Five: <br />
   <img src="" height="80%" width="80%" alt="image five"/>
 </p>
-
