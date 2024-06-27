@@ -46,6 +46,16 @@ This introductory TryHackMe room focuses on running basic commands on a Linux te
 </p>
 <br />
 <br />
+- <b>Searching for Files</b>
+<p>Obviously searching manually through folders using cd and ls like in the previous section is inefficient and annoying, so the next section introduces the commands find and grep to make the search more manageable.</p>
+<br>
+<p align="center">If I wanted to find the location of the note.txt file in the previous section much faster, I could instead uses the find command and the wildcard with .txt to look through the 4 folders and print the location of the .txt file.<br/>
+  <img src="https://github.com/Finley-Klee/Linux-Fundamentals-Part-1/assets/171582741/3f182797-87ce-416b-9c9a-5f92016a7673" height="80%" width="80%" alt="A black backgorund with white text. The first line reads tryhackme@Linux1:~$ find -name *.txt. The next line reads ./tryhackme/folder4/note.txt. The last line reads tryhackme@Linux1:~$"/>
+  <br />
+  <br />
+ However, the TryHackMe room actually asks us to use the grep command to search through the access.log file for a flag which will begin with THM. To find it I put THM followed by an * character in quotes between the grep command and the name of the file I wanted to search, in this case access.log. The output shows that the flag is THM{ACCESS}.<br />
+  <img src="https://github.com/Finley-Klee/Linux-Fundamentals-Part-1/assets/171582741/00a1b3d2-d649-4e23-bf33-8c951a76086c" height="80%" width="80%" alt="A black background with white text except for the term I searched for which is printed in red. The first line reads tryhackme@Linux1:~$ grep THM* access.log. The output from that command shows an ip address followed by a dat, followed by GET THM{ACCESS} followed by more information about the internet packet like the language, the browser, etc."/>
+</p>
 - <b>Section Name</b>
 <p>Description</p>
 <br>
