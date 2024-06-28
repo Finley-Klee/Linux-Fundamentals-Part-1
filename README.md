@@ -56,25 +56,7 @@ This introductory TryHackMe room focuses on running basic commands on a Linux te
  However, the TryHackMe room actually asks us to use the grep command to search through the access.log file for a flag which will begin with THM. To find it I put THM followed by an * character in quotes between the grep command and the name of the file I wanted to search, in this case access.log. The output shows that the flag is THM{ACCESS}.<br />
   <img src="https://github.com/Finley-Klee/Linux-Fundamentals-Part-1/assets/171582741/00a1b3d2-d649-4e23-bf33-8c951a76086c" height="80%" width="80%" alt="A black background with white text except for the term I searched for which is printed in red. The first line reads tryhackme@Linux1:~$ grep THM* access.log. The output from that command shows an ip address followed by a dat, followed by GET THM{ACCESS} followed by more information about the internet packet like the language, the browser, etc."/>
 </p>
-- <b>Section Name</b>
-<p>Description</p>
+- <b>An Introduction to Shell Operators</b>
+<p>In the last section we are introduced to the operators: &, &&, >, and >>. The difference between the & and && operators is their function. The & operator runs commands in the background so that you can continue using the terminal while the command is running, and the && operator allows you to combine commands together. The > and >> operators, however, differ in a more particular way. Both redirect the output of a command, but the > operator overwrites the contents if there are any there, while the >> operator adds the output to the end of any contents already there.</p>
 <br>
-<p align="center">Step One: <br/>
-  <img src="" height="80%" width="80%" alt="image one"/>
-  <br />
-  <br />
-  Step Two: <br />
-  <img src="" height="80%" width="80%" alt="image two"/>
-  <br />
-  <br />
-  Step Three: <br />
-  <img src="" height="80%" width="80%" alt="image three"/>
-   <br />
-  <br />
-  Step Four: <br />
-  <img src="" height="80%" width="80%" alt="image four"/>
-   <br />
-  <br />
-  Step Five: <br />
-  <img src="" height="80%" width="80%" alt="image five"/>
-</p>
+
